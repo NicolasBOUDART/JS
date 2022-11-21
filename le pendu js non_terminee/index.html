@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<html lang="fr">
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Pendu</title>
+</head>
+    <body>
+        <header class="w-100 bg-light container">
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn btn-success w-100 h-100 ml-0" onclick="commencerlapartie()"> definir le mot a trouver</button>
+                </div>
+                <div class="col-5 text-center mx-auto">
+                    <h1>LE PENDU</h1>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success w-100 h-100 ml-0" onclick="pendu()"> proposer une lettre</button>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 mr-5 mt-5 text-center">
+                    <svg height="500" width="500" id="IDpotence">
+                        
+                    </svg> 
+                </div>
+                <div class="col-7">
+                    <svg height="500" width="800" id="IDtiret">
+                    </svg> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row row-cols-1 g-0">
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrea" >A</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrez" >Z</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettree">E</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrer">R</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettret">T</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrey">Y</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreu">U</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrei">I</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreo">O</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrep">P</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreq">Q</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettres">S</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettred">D</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettref">F</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreg">G</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreh">H</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrej">J</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrek">K</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrel">L</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrem">M</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrew">W</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrex">X</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrec">C</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettrev">V</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettreb">B</button>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-success rounded-0 w-100 h-100" id="IDlettren">N</button>
+                </div>
+            </div>
+        </div>
+        <!--  SCRIPT  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

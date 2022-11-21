@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+<html lang="fr">
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Juste Prix</title>
+</head>
+
+    <body>
+        <header class="w-100 bg-light container">
+            <div class="row">
+                <div class="col-5 text-center mx-auto">
+                    <h1>LE JUSTE PRIX</h1>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mx-auto mt-5 text-center">
+                    <img src="./lagaf.jpg">
+                </div>
+                <div class="col-4 mx-auto mt-5 text-center">
+                    <h3 class="mt-5 mx-0"> BIENVENUE POUR CETTE PARTIE DU JUSTE PRIX</h3>
+                    <button onclick="commencerlejeu()" class="btn btn-dark text-white"> Commence le jeu</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5 text-center">
+                    <div id="IDobjet">
+                    </div>
+                    <div id="IDmessage1">    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche1">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 1 </label>
+                    <input type="number" class="form-control" id="IDtentative1">
+                    <button class="btn btn-primary" onclick="essai1()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat1">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche2">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 2 </label>
+                    <input type="number" class="form-control" id="IDtentative2">
+                    <button class="btn btn-primary" onclick="essai2()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat2">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche3">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 3 </label>
+                    <input type="number" class="form-control" id="IDtentative3">
+                    <button class="btn btn-primary" onclick="essai3()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat3">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche4">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 4 </label>
+                    <input type="number" class="form-control" id="IDtentative4">
+                    <button class="btn btn-primary" onclick="essai4()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat4">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche5">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 5 </label>
+                    <input type="number" class="form-control" id="IDtentative5">
+                    <button class="btn btn-primary" onclick="essai5()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat5">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche6">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 6 </label>
+                    <input type="number" class="form-control" id="IDtentative6">
+                    <button class="btn btn-primary" onclick="essai6()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat6">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche7">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 7 </label>
+                    <input type="number" class="form-control" id="IDtentative7">
+                    <button class="btn btn-primary" onclick="essai7()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat7">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche8">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 8 </label>
+                    <input type="number" class="form-control" id="IDtentative8">
+                    <button class="btn btn-primary" onclick="essai8()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat8">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche9">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 9 </label>
+                    <input type="number" class="form-control" id="IDtentative9">
+                    <button class="btn btn-primary" onclick="essai9()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat9">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="IDmanche10">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <label for="prix" class="form-label"> Tentative 10 </label>
+                    <input type="number" class="form-control" id="IDtentative10">
+                    <button class="btn btn-primary" onclick="essai10()"> Valider </button>
+                </div>
+                <div class="col-6 mx-auto mt-5" id="IDresultat10">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5" id="IDresultafinal">
+                </div>
+            </div>
+        </div>
+        <!--  SCRIPT  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

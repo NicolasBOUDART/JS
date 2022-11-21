@@ -1,0 +1,39 @@
+			<!-- bas de la potence -->
+                        <line x1="100" y1="400" x2="400" y2="400" style="stroke:rgb(0, 0, 0);stroke-width:2"/>
+                        <!-- bar verticale de la potence -->
+                        <line x1="150" y1="100" x2="150" y2="400" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- bar horizontal haut de la potence puis diagonel -->
+                        <line x1="150" y1="100" x2="300" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <line x1="150" y1="150" x2="180" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- corde de la potence -->
+                        <line x1="300" y1="100" x2="300" y2="180" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- tete -->
+                        <circle cx="300" cy="200" r="20" stroke="black" stroke-width="2" />
+                        <line x1="296" y1="210" x2="304" y2="210" style="stroke:rgb(255, 255, 255);stroke-width:3" />
+                        <!--Oeuil normal-->
+                        <ellipse cx="290" cy="195" rx="8" ry="5" style="fill:rgb(255, 255, 255);stroke:rgb(0, 0, 0);stroke-width:2" />
+                        <circle cx="290" cy="195" r="3" stroke="black" style="stroke:rgba(0, 225, 255, 0.932)" stroke-width="2" />
+                        <circle cx="290" cy="195" r="1" stroke="black" stroke-width="2"/>
+                        <ellipse cx="310" cy="195" rx="8" ry="5" style="fill:rgb(255, 255, 255);stroke:rgb(0, 0, 0);stroke-width:2" />
+                        <circle cx="310" cy="195" r="3" stroke="black" style="stroke:rgba(0, 225, 225, 0.932)" stroke-width="2" />
+                        <circle cx="310" cy="195" r="1" stroke="black" stroke-width="2"/>
+                        <!--OEUIL EN CROIX-->
+                        <line x1="290" y1="190" x2="300" y2="200" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="290" y1="200" x2="300" y2="190" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="302" y1="190" x2="312" y2="200" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="302" y1="200" x2="312" y2="190" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <!--OEUIL EN ><-->
+                        <line x1="290" y1="192" x2="295" y2="195" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="290" y1="198" x2="295" y2="195" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="307" y1="195" x2="312" y2="198" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <line x1="307" y1="195" x2="312" y2="192" style="stroke:rgb(255, 0, 0);stroke-width:2" />
+                        <!-- tronc -->
+                        <line x1="300" y1="220" x2="300" y2="300" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- bras gauche -->
+                        <line x1="300" y1="240" x2="270" y2="280" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- bras droit -->
+                        <line x1="300" y1="240" x2="330" y2="280" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- jambe gauche -->
+                        <line x1="300" y1="300" x2="270" y2="340" style="stroke:rgb(0,0,0);stroke-width:2" />
+                        <!-- jambe droite -->
+                        <line x1="300" y1="300" x2="330" y2="340" style="stroke:rgb(0,0,0);stroke-width:2" />

@@ -1,0 +1,6 @@
+#IDpotence{
+    animation: apparition 4s infinite ;
+    background-image: url(bg.jpg);
+    background-color: #54F98D;
+    background-blend-mode: hard-light;
+}
